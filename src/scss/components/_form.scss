@@ -1,0 +1,36 @@
+.form {
+  width: 100%;
+
+  &__group {
+    @include flex(stretch, column, inherit);
+    width: 100%;
+  }
+
+  &__label {
+    &--centered {
+      text-align: center;
+    }
+  }
+
+  &__input {
+    border: 0;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    padding: 0.4em 1.6em;
+    background: $color-black;
+    outline: 1px solid $color-success;
+    font-family: inherit;
+    font-size: 2rem;
+    width: inherit;
+    color: $color-white;
+
+    &--centered {
+      text-align: center;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $color-default;
+    }
+  }
+}

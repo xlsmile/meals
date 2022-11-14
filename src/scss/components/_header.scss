@@ -1,0 +1,10 @@
+.header {
+  @include flex(center, row, space-between);
+  @include box-shadow;
+  position: fixed;
+  width: 100%;
+  background: $color-black;
+  padding: 2rem 5.2rem;
+  color: $color-white;
+  z-index: 2;
+}

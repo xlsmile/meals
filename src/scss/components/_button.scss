@@ -1,0 +1,113 @@
+.cta {
+  @include border-radius;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
+  background: $color-alpha;
+  border: none;
+  font-family: inherit;
+  font-size: $font-size-m;
+  font-weight: 300;
+  padding: 0.4em 1.2em;
+  position: relative;
+  min-width: fit-content;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($color-alpha, 2%);
+  }
+
+  &:active {
+    @include box-shadow;
+  }
+
+  &--success {
+    background: $color-success;
+    color: $color-alpha;
+
+    &:hover {
+      background: lighten($color-success, 5%);
+    }
+  }
+
+  &--cart {
+    @include flex(center, row, space-between);
+    gap: 1.2rem;
+    background-color: $color-gamma;
+    color: $color-alpha;
+
+    &:hover {
+      background: darken($color-gamma, 5%);
+    }
+  }
+
+  &--add {
+    background: $color-success;
+    color: $color-alpha;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    outline: 1px solid $color-success;
+    padding: 0.2em 1.2em;
+
+    &:hover {
+      background: darken($color-success, 5%);
+    }
+
+    &:focus,
+    &:active {
+      background: darken($color-success, 10%);
+    }
+  }
+
+  &__cancel {
+    border-radius: 0;
+    background: transparent;
+    color: $color-gamma;
+    box-shadow: none;
+    padding: 0 2rem;
+    position: relative;
+
+    &:hover {
+      background: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      height: 3px;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 250ms ease-in;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+
+  &__submit {
+    margin-top: 3.2rem;
+  }
+
+  &--default {
+    background: $color-default;
+    color: $color-alpha;
+
+    &:hover {
+      background: lighten($color-default, 5%);
+    }
+  }
+
+  &--danger {
+    background: $color-danger;
+    color: $color-alpha;
+
+    &:hover {
+      background: lighten($color-danger, 5%);
+    }
+  }
+
+}

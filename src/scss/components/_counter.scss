@@ -1,0 +1,33 @@
+.counter {
+  @include flex(center, row, center);
+  gap: 2rem;
+  font-size: 3.6rem;
+
+  @include media(phone) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__number {
+    font-size: 6rem;
+    color: $color-white;
+    min-width: 10rem;
+    text-align: center;
+    flex: 1 0 10rem;
+
+    @include media(phone) {
+      flex-basis: 0;
+    }
+  }
+
+  &__cart {
+    @include box-shadow();
+    background-color: $color-success;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 2em;
+    height: 2em;
+  }
+}

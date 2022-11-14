@@ -1,0 +1,74 @@
+.list {
+  @include flex(inherit, column, inherit);
+  list-style: none;
+  width: 100%;
+  gap: 2rem;
+}
+
+.list-item {
+  @include flex(center, row, space-between);
+  @include border-radius;
+  @include box-shadow;
+  gap: 2rem;
+  background: $color-dark;
+  font-size: $font-size-m;
+  padding: 1.6rem 3.6rem 3.6rem;
+  width: inherit;
+  transition: background-color 250ms ease-in;
+
+  &:hover {
+    background-color: $color-black;
+  }
+
+  &__date {
+    @include flex(center, column, center);
+    @include border-radius;
+    background: $color-gamma;
+    color: $color-alpha;
+    flex: 0 0 14rem;
+    font-size: $font-size-m;
+    line-height: 1.6;
+    max-width: 14rem;
+    padding: 0.8rem 3.2rem;
+
+    &--year {
+      font-weight: 500;
+    }
+    &--month {
+      font-weight: 300;
+    }
+    &--day {
+      font-weight: 200;
+    }
+  }
+
+  &__content {
+    @include flex(flex-start, column, space-between);
+    flex: 1 0 75%;
+    align-self: stretch;
+    line-height: 1.4;
+
+    &--title {
+      background: linear-gradient(-90deg, $color-default, $color-gamma);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: $color-gamma;
+      font-size: calc(1rem + 1.4vw);
+      filter: drop-shadow(0 0.2rem 0.1rem $color-black);
+    }
+
+    &--description {
+      font-size: $font-size-m;
+    }
+  }
+
+  &__amount {
+    @include border-radius;
+    background: $color-gamma;
+    color: $color-alpha;
+    font-weight: 300;
+    min-width: 14rem;
+    padding: 0.8rem 2.8rem;
+    text-align: center;
+  }
+}

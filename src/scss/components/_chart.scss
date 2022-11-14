@@ -1,0 +1,33 @@
+.chart {
+  @include flex(center, row, space-between);
+  background-color: $color-alpha;
+  height: 20rem;
+  padding: 2rem 3.6rem 1.2rem;
+}
+
+.chart-bar {
+  @include flex(center, column, stretch);
+  flex: 0 0 2.2rem;
+  height: 100%;
+
+  &__pipe {
+    height: 100%;
+    width: 100%;
+    border: 0.1rem solid $color-gamma;
+    background-color: $color-gamma;
+    overflow: hidden;
+  }
+
+  &__filler {
+    background-color: $color-beta;
+    height: 100%;
+    transition: all 0.3s ease-out;
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $color-dark;
+  }
+}

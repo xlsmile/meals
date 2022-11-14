@@ -1,0 +1,38 @@
+.modal {
+  &__backdrop {
+    background-color: rgb(0 0 0 / 0.6);
+    inset: 0;
+    position: fixed;
+    z-index: 10;
+  }
+
+  &__overlay {
+    @include box-shadow;
+    @include border-radius;
+    background-color: $color-delta;
+    padding: 5.2rem;
+    min-width: 40%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+  }
+
+  &__content {
+    font-size: 3.2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__amount {
+    margin-bottom: 1.2em;
+  }
+
+  &__cta {
+    @include flex(center, row, right);
+    gap: 0.8em;
+  }
+}

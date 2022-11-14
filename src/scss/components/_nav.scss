@@ -1,0 +1,44 @@
+.nav {
+  font-size: 2rem;
+
+  &__list {
+    @include flex(center, row, center);
+    flex-wrap: wrap;
+    gap: 1.2em;
+    list-style: none;
+    margin-inline: 2.6rem;
+  }
+
+  &__list-link {
+    background-color: $color-default;
+    border-radius: 0.4rem;
+    padding: 0.4em 1.2em;
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: $color-white;
+    transition: background-color 250ms ease-in;
+
+    &:hover {
+      background-color: darken($color-default, 10%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      height: 3px;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 250ms ease-in;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+}
