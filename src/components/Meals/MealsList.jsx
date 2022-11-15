@@ -3,26 +3,26 @@ import MealsItem from "./MealsItem";
 const meals = [
   {
     id: "m1",
-    title: "Crispy Tofu Salad",
-    description: "Green beans, pickled carrot, fennel, onion",
+    title: "Creamy Grape",
+    description: "Chopped pecans, vanilla extract, green grapes",
     price: 25.55,
   },
   {
     id: "m2",
-    title: "Katsu Chicken",
-    description: "Panko chicken, shredded cos, pickles",
+    title: "Pina Colada",
+    description: "Almond extract, blueberries, mint, raspberries",
     price: 23.55,
   },
   {
     id: "m3",
-    title: "Lumberjack Burger",
-    description: "Double beef, double cheese, lettuce",
+    title: "Cranberry Waldorf",
+    description: "Marshmallows, whipped cream, nuts, cranberries",
     price: 32.99,
   },
   {
     id: "m4",
-    title: "Roasted Pumpkin",
-    description: "Farro, radicchio, spiced pumpkin seeds",
+    title: "Tropical Fruit",
+    description: "Cubed pears, mangoes, strawberries, kiwifruit",
     price: 28.55,
   },
 ];

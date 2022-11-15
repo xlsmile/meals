@@ -364,6 +364,7 @@ body {
 .list__modal {
   max-height: 60vh;
   overflow: auto;
+  padding-bottom: 1.2rem;
 }
 
 .list-item {

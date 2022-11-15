@@ -6,7 +6,7 @@ const Header = ({onShowCartModal}) => {
   return (
     <>
       <header className="header">
-        <h1 className="title__primary title__primary">Meals App</h1>
+        <h1 className="title__primary title__primary">Fruit Salads</h1>
         <NavMain />
         <CartButton showCartModal={onShowCartModal} />
       </header>

@@ -9,7 +9,7 @@ const NavMain = () => {
         </li>
         <li className="nav__list-item">
           <a href="/" className="nav__list-link">
-            Our Meals
+            Our Salads
           </a>
         </li>
         <li className="nav__list-item">
