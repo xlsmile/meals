@@ -40,6 +40,26 @@
     }
   }
 
+  &--decrease {
+    background: $color-gamma;
+    color: $color-white;
+    padding: 0.4em 0.8em;
+
+    &:hover {
+      background: darken($color-gamma, 5%);
+    }
+  }
+
+  &--increase {
+    background: $color-success;
+    color: $color-white;
+    padding: 0.4em 0.8em;
+
+    &:hover {
+      background: darken($color-success, 5%);
+    }
+  }
+
   &--add {
     background: $color-success;
     color: $color-alpha;

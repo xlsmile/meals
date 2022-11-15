@@ -114,6 +114,22 @@ body {
 .cta--cart:hover {
   background: #6e3272;
 }
+.cta--decrease {
+  background: #7f3a84;
+  color: #fff;
+  padding: 0.4em 0.8em;
+}
+.cta--decrease:hover {
+  background: #6e3272;
+}
+.cta--increase {
+  background: #3a8340;
+  color: #fff;
+  padding: 0.4em 0.8em;
+}
+.cta--increase:hover {
+  background: #327137;
+}
 .cta--add {
   background: #3a8340;
   color: #fef0ff;
@@ -280,6 +296,13 @@ body {
   justify-content: inherit;
   width: 100%;
 }
+.form__group--row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: inherit;
+  gap: 0.4em;
+}
 .form__label--centered {
   text-align: center;
 }
@@ -338,6 +361,10 @@ body {
   width: 100%;
   gap: 2rem;
 }
+.list__modal {
+  max-height: 60vh;
+  overflow: auto;
+}
 
 .list-item {
   display: flex;
@@ -379,6 +406,9 @@ body {
 .list-item__date--day {
   font-weight: 200;
 }
+.list-item--modal {
+  padding-block: 1.6rem;
+}
 .list-item__content {
   display: flex;
   align-items: flex-start;
@@ -396,8 +426,19 @@ body {
   font-size: calc(1rem + 1.4vw);
   filter: drop-shadow(0 0.2rem 0.1rem #21252f);
 }
-.list-item__content--description {
+.list-item__content--heading {
+  font-size: calc(1rem + 1.2vw);
+  color: #ffdab3;
+}
+.list-item__content--modal {
+  flex: auto;
+}
+.list-item__content--description, .list-item__content--price, .list-item__content--amount {
   font-size: calc(0.9rem + 0.8vw);
+  color: #fff;
+}
+.list-item__content--price {
+  margin-right: 0.1em;
 }
 .list-item__amount {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
@@ -407,6 +448,9 @@ body {
   min-width: 14rem;
   padding: 0.8rem 2.8rem;
   text-align: center;
+}
+.list-item__icon {
+  margin-inline: 0.4em;
 }
 
 .main {
@@ -466,9 +510,19 @@ body {
 }
 .modal__list {
   list-style: none;
+  overflow: auto;
 }
 .modal__amount {
-  margin-bottom: 1.2em;
+  margin: 1.2em 0 0.8em;
+}
+.modal__amount--text {
+  margin-right: 0.4em;
+}
+.modal__amount--number {
+  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  background: #3a8340;
+  color: #fff;
+  padding: 0.1em 0.4em;
 }
 .modal__cta {
   display: flex;

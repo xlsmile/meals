@@ -3,6 +3,11 @@
   list-style: none;
   width: 100%;
   gap: 2rem;
+
+  &__modal {
+    max-height: 60vh;
+    overflow: auto;
+  }
 }
 
 .list-item {
@@ -42,6 +47,10 @@
     }
   }
 
+  &--modal {
+    padding-block: 1.6rem;
+  }
+
   &__content {
     @include flex(flex-start, column, space-between);
     flex: 1 0 75%;
@@ -57,8 +66,24 @@
       filter: drop-shadow(0 0.2rem 0.1rem $color-black);
     }
 
-    &--description {
+    &--heading {
+      font-size: calc(1rem + 1.2vw);
+      color: $color-delta;
+    }
+
+    &--modal {
+      flex: auto;
+    }
+
+    &--description,
+    &--price,
+    &--amount {
       font-size: $font-size-m;
+      color: $color-white;
+    }
+
+    &--price {
+      margin-right: 0.1em;
     }
   }
 
@@ -70,5 +95,9 @@
     min-width: 14rem;
     padding: 0.8rem 2.8rem;
     text-align: center;
+  }
+
+  &__icon {
+    margin-inline: 0.4em;
   }
 }

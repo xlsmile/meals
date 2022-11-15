@@ -1,5 +1,6 @@
 import {useEffect, useContext} from "react";
 import Modal from "../Modal/Modal";
+import CartItem from "./CartItem";
 import CartContext from "../Store/CartContext";
 
 const Cart = ({onHideCartModal}) => {
@@ -16,13 +17,30 @@ const Cart = ({onHideCartModal}) => {
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItems = <ul className="modal__list">{cartCtx.items.map(item => <li>{item.title}</li>)}</ul>;
+  const handleRemoveCartItem = id => {};
+  const handleAddCartItem = item => {};
+
+  const cartItems = (
+    <ul className="list list__modal">
+      {cartCtx.items.map(item =>(
+        <CartItem
+          key={item.id}
+          title={item.title}
+          amount={item.amount}
+          price={item.price}
+          onRemove={handleRemoveCartItem.bind(null, item.id)}
+          onAdd={handleAddCartItem.bind(null, item)}
+        />
+      ))}
+    </ul>
+  );
+
   return (
     <Modal hideCartModal={onHideCartModal}>
       {cartItems}
       <div className="modal__amount">
-        <span>Total amount </span>
-        <span>{totalAmount}</span>
+        <span className="modal__amount--text">Total amount</span>
+        <span className="modal__amount--number">{totalAmount}</span>
       </div>
       <div className="modal__cta">
         <button className="cta cta__cancel" onClick={onHideCartModal}>Close</button>
