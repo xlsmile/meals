@@ -1,17 +1,9 @@
-import {useEffect, useContext} from "react";
+import {useContext} from "react";
 import Modal from "../Modal/Modal";
 import CartItem from "./CartItem";
 import CartContext from "../Store/CartContext";
 
 const Cart = ({onHideCartModal}) => {
-
-  useEffect(() => {
-    document.addEventListener("keyup", (e) => {
-      if (e.key === "Escape") {
-        onHideCartModal();
-      }
-    });
-  }, [onHideCartModal]);
 
   const cartCtx = useContext(CartContext);
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;

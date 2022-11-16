@@ -1,11 +1,11 @@
 .modal {
 
-  &__backdrop {
-    background-color: rgb(0 0 0 / 0.6);
-    inset: 0;
-    position: fixed;
-    z-index: 10;
-  }
+  // &__backdrop {
+  //   background-color: rgb(0 0 0 / 0.6);
+  //   inset: 0;
+  //   position: fixed;
+  //   z-index: 10;
+  // }
 
   &__overlay {
     @include box-shadow;

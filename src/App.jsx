@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./components/Layout/Header";
 import Main from "./components/Layout/Main";
 import Footer from "./components/Layout/Footer";
@@ -7,20 +6,24 @@ import CartProvider from "./components/Store/CartProvider";
 
 const App = () => {
 
-  const [cartModalIsShown, setCartModalIsShown] = useState(false);
+const mo = document.getElementById("mo");
 
-  const handleShowCartModal = () => {
-    setCartModalIsShown(true);
+  const handleShowCartModal = (e) => {
+    e.preventDefault();
+    console.log("show");
+    mo.show();
   }
 
-  const handleHideCartModal = () => {
-    setCartModalIsShown(false);
+  const handleHideCartModal = (e) => {
+    e.preventDefault();
+    console.log("close");
+    mo.close();
   }
 
   return (
     <CartProvider>
       <div className="content">
-        {cartModalIsShown && <Cart onHideCartModal={handleHideCartModal} />}
+        <Cart onHideCartModal={handleHideCartModal} />
         <Header onShowCartModal={handleShowCartModal} />
         <Main />
         <Footer />
