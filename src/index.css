@@ -47,10 +47,11 @@ body {
   }
 }
 
-.title__primary, .title__tertiary {
+.title__primary, .title__secondary, .title__tertiary {
   background: linear-gradient(-90deg, #3a5483, #7f3a84);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 .title__primary {
   font-size: calc(1rem + 2.4vw);
@@ -59,7 +60,6 @@ body {
 .title__secondary {
   font-size: calc(1rem + 2vw);
   margin-bottom: 0.4em;
-  color: #ffdab3;
 }
 .title__tertiary {
   font-size: calc(0.9rem + 0.8vw);
@@ -73,7 +73,6 @@ body {
   font-weight: 400;
   width: 70%;
   margin-inline: auto;
-  color: #ffdab3;
 }
 
 .cta {
