@@ -1,23 +1,27 @@
 import Header from "./components/Layout/Header";
 import Main from "./components/Layout/Main";
 import Footer from "./components/Layout/Footer";
+import React from 'react';
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./components/Store/CartProvider";
 
 const App = () => {
 
-const mo = document.getElementById("mo");
+  let modal = null;
 
-  const handleShowCartModal = (e) => {
-    e.preventDefault();
-    console.log("show");
-    mo.show();
+  React.useEffect(() => {
+    modal = document.querySelector(".modal__overlay");
+      return () => {
+        modal = null;
+      }
+  }, []);
+
+  const handleShowCartModal = () => {
+    modal.showModal();
   }
 
-  const handleHideCartModal = (e) => {
-    e.preventDefault();
-    console.log("close");
-    mo.close();
+  const handleHideCartModal = () => {
+    modal.close();
   }
 
   return (

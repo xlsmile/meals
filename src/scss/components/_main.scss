@@ -38,4 +38,17 @@
   position: relative;
   text-align: center;
   margin-bottom: 3.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: -45px;
+    width: 13%;
+    height: 34%;
+    background-image: url("../src/assets/images/mint-ba.png");
+    background-size: contain;
+    z-index: 100;
+    filter: drop-shadow(0 0.4em 0.8em $color-black);
+  }
 }

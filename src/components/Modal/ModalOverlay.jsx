@@ -1,6 +1,6 @@
 const ModalOverlay = (props) => {
   return (
-    <dialog className="modal__overlay" id="mo">
+    <dialog className="modal__overlay">
       <div className="modal__content">{props.children}</div>
     </dialog>
   )
