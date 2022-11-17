@@ -38,7 +38,7 @@ body {
 }
 @media (max-width: 90em) {
   body {
-    background: #59921b;
+    background: #457d0c;
   }
 }
 @media (max-width: 48em) {
@@ -95,11 +95,11 @@ body {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
 }
 .cta--success {
-  background: #59921b;
+  background: #457d0c;
   color: #fef0ff;
 }
 .cta--success:hover {
-  background: #66a81f;
+  background: #52940e;
 }
 .cta--cart {
   display: flex;
@@ -122,26 +122,26 @@ body {
   background: #6e3272;
 }
 .cta--increase {
-  background: #59921b;
+  background: #457d0c;
   color: #fff;
   padding: 0.4em 0.8em;
 }
 .cta--increase:hover {
-  background: #4c7c17;
+  background: #38660a;
 }
 .cta--add {
-  background: #59921b;
+  background: #457d0c;
   color: #fef0ff;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  outline: 1px solid #59921b;
+  outline: 1px solid #457d0c;
   padding: 0.2em 1.2em;
 }
 .cta--add:hover {
-  background: #4c7c17;
+  background: #38660a;
 }
 .cta--add:focus, .cta--add:active {
-  background: #3f6713;
+  background: #2b4e08;
 }
 .cta__cancel {
   border-radius: 0;
@@ -266,7 +266,7 @@ body {
 }
 .counter__cart {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
-  background-color: #59921b;
+  background-color: #457d0c;
   border: 1px solid #fff;
   border-radius: 50%;
   font-size: 2rem;
@@ -311,7 +311,7 @@ body {
   border-top-right-radius: 0.4rem;
   padding: 0.4em 1.6em;
   background: #21252f;
-  outline: 1px solid #59921b;
+  outline: 1px solid #457d0c;
   font-family: inherit;
   font-size: 2rem;
   width: inherit;
@@ -528,7 +528,7 @@ body {
 }
 .modal__amount--number {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
-  background: #59921b;
+  background: #457d0c;
   color: #fff;
   padding: 0.1em 0.4em;
 }
