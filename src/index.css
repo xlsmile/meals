@@ -507,6 +507,7 @@ body {
 
 .modal {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  animation: fadein 400ms 250ms both, slideup 400ms 250ms both;
   box-shadow: 0 2.4rem 5.8rem rgba(33, 37, 47, 0.8);
   background-color: #ffdab3;
   border: none;
@@ -516,7 +517,6 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
-  animation: fadein 400ms 250ms both, slideup 400ms 250ms both;
 }
 .modal::backdrop {
   background: linear-gradient(-45deg, #355ba0, #a44dab);
