@@ -1,20 +1,19 @@
-import {useContext} from "react";
+import { useContext } from "react";
 import Modal from "../Modal/Modal";
 import CartItem from "./CartItem";
 import CartContext from "../Store/CartContext";
 
-const Cart = ({onHideCartModal}) => {
-
+const Cart = ({ onHideCartModal }) => {
   const cartCtx = useContext(CartContext);
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const handleRemoveCartItem = id => {};
-  const handleAddCartItem = item => {};
+  const handleRemoveCartItem = (id) => {};
+  const handleAddCartItem = (item) => {};
 
   const cartItems = (
     <ul className="list list__modal">
-      {cartCtx.items.map(item =>(
+      {cartCtx.items.map((item) => (
         <CartItem
           key={item.id}
           title={item.title}
@@ -34,12 +33,20 @@ const Cart = ({onHideCartModal}) => {
         <span className="modal__amount--text">Total amount</span>
         <span className="modal__amount--number">{totalAmount}</span>
       </div>
-      <div className="modal__cta">
-        <button className="cta cta__cancel" onClick={onHideCartModal}>Close</button>
+      {/* <div className="modal__cta">
+        <button className="cta cta__cancel" onClick={onHideCartModal}>
+          Close
+        </button>
         {hasItems && <button className="cta cta--success">Order</button>}
-      </div>
+      </div> */}
+      <form className="modal__cta" method="dialog">
+        <button className="cta cta__cancel" onClick={onHideCartModal}>
+          Close
+        </button>
+        {hasItems && <button className="cta cta--success">Order</button>}
+      </form>
     </Modal>
-  )
-}
+  );
+};
 
 export default Cart;

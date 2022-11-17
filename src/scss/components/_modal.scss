@@ -1,23 +1,20 @@
 .modal {
 
-  // &__backdrop {
-  //   background-color: rgb(0 0 0 / 0.6);
-  //   inset: 0;
-  //   position: fixed;
-  //   z-index: 10;
-  // }
-
-  &__overlay {
-    @include box-shadow;
     @include border-radius;
+    box-shadow: 0 2.4rem 5.8rem rgb(33 37 47 / 80%);
     background-color: $color-delta;
+    border: none;
     padding: 5.2rem;
     min-width: 40%;
-    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
+
+  &::backdrop {
+    background: linear-gradient(-45deg, $color-primary, $color-lambda);
+    // background-color: $color-dark;
+    opacity: 0.5;
   }
 
   &__content {
