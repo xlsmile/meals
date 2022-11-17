@@ -38,7 +38,7 @@ body {
 }
 @media (max-width: 90em) {
   body {
-    background: #3a8340;
+    background: #58822b;
   }
 }
 @media (max-width: 48em) {
@@ -48,7 +48,7 @@ body {
 }
 
 .title__primary, .title__tertiary {
-  background: linear-gradient(-90deg, #3a5483, #7f3a84);
+  background: linear-gradient(-90deg, #36558f, #7f3a84);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -97,11 +97,11 @@ body {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
 }
 .cta--success {
-  background: #3a8340;
+  background: #58822b;
   color: #fef0ff;
 }
 .cta--success:hover {
-  background: #429549;
+  background: #659531;
 }
 .cta--cart {
   display: flex;
@@ -124,26 +124,26 @@ body {
   background: #6e3272;
 }
 .cta--increase {
-  background: #3a8340;
+  background: #58822b;
   color: #fff;
   padding: 0.4em 0.8em;
 }
 .cta--increase:hover {
-  background: #327137;
+  background: #4b6f25;
 }
 .cta--add {
-  background: #3a8340;
+  background: #58822b;
   color: #fef0ff;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  outline: 1px solid #3a8340;
+  outline: 1px solid #58822b;
   padding: 0.2em 1.2em;
 }
 .cta--add:hover {
-  background: #327137;
+  background: #4b6f25;
 }
 .cta--add:focus, .cta--add:active {
-  background: #2a602f;
+  background: #3e5c1e;
 }
 .cta__cancel {
   border-radius: 0;
@@ -175,11 +175,11 @@ body {
   margin-top: 3.2rem;
 }
 .cta--default {
-  background: #3a5483;
+  background: #36558f;
   color: #fef0ff;
 }
 .cta--default:hover {
-  background: #425f95;
+  background: #3d60a2;
 }
 .cta--danger {
   background: #c9342c;
@@ -268,7 +268,7 @@ body {
 }
 .counter__cart {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
-  background-color: #3a8340;
+  background-color: #58822b;
   border: 1px solid #fff;
   border-radius: 50%;
   font-size: 2rem;
@@ -313,7 +313,7 @@ body {
   border-top-right-radius: 0.4rem;
   padding: 0.4em 1.6em;
   background: #21252f;
-  outline: 1px solid #3a8340;
+  outline: 1px solid #58822b;
   font-family: inherit;
   font-size: 2rem;
   width: inherit;
@@ -323,7 +323,7 @@ body {
   text-align: center;
 }
 .form__input:focus, .form__input:active {
-  background-color: #3a5483;
+  background-color: #36558f;
 }
 
 .header {
@@ -347,9 +347,9 @@ body {
   --size: 5rem;
   --p: 2.5rem;
   --R: 5.6rem;
-  -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #3a5483 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, #3a5483 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
+  -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #36558f 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, #36558f 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
   mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #7f3a84 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, #21252f 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
-  background: linear-gradient(90deg, #3a5483, #7f3a84);
+  background: linear-gradient(90deg, #36558f, #7f3a84);
   border: none;
 }
 
@@ -421,7 +421,7 @@ body {
   line-height: 1.4;
 }
 .list-item__content--title {
-  background: linear-gradient(-90deg, #3a5483, #7f3a84);
+  background: linear-gradient(-90deg, #36558f, #7f3a84);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #7f3a84;
@@ -473,9 +473,9 @@ body {
   --size: 5rem;
   --p: 2.5rem;
   --R: 5.6rem;
-  -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #3a5483 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, #3a5483 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
+  -webkit-mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #36558f 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, #36558f 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
   mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #7f3a84 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%, radial-gradient(var(--R) at 50% calc(100% + var(--p)), rgba(0, 0, 0, 0) 99%, #21252f 101%) 50% calc(100% - var(--size))/calc(4 * var(--size)) 100% repeat-x;
-  background: linear-gradient(90deg, #3a5483, #7f3a84);
+  background: linear-gradient(90deg, #36558f, #7f3a84);
   border: none;
 }
 
@@ -496,6 +496,7 @@ body {
   inset: 0;
   position: fixed;
   z-index: 10;
+  opacity: 0.5;
 }
 .modal__overlay {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
@@ -524,7 +525,7 @@ body {
 }
 .modal__amount--number {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
-  background: #3a8340;
+  background: #58822b;
   color: #fff;
   padding: 0.1em 0.4em;
 }
@@ -550,7 +551,7 @@ body {
   margin-inline: 2.6rem;
 }
 .nav__list-link {
-  background-color: #3a5483;
+  background-color: #36558f;
   border-radius: 0.4rem;
   padding: 0.4em 1.2em;
   position: relative;
@@ -561,7 +562,7 @@ body {
   transition: background-color 250ms ease-in;
 }
 .nav__list-link:hover {
-  background-color: #2a3d60;
+  background-color: #283f6a;
 }
 .nav__list-link::before {
   content: "";

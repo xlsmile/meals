@@ -2,9 +2,11 @@
 
   &__backdrop {
     background-color: rgb(0 0 0 / 0.6);
+    // background: linear-gradient(-45deg, $color-primary, $color-lambda);
     inset: 0;
     position: fixed;
     z-index: 10;
+    opacity: 0.5;
   }
 
   &__overlay {
