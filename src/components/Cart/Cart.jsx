@@ -38,10 +38,6 @@ const Cart = ({onHideCartModal}) => {
         <button className="cta cta__cancel" onClick={onHideCartModal}>Close</button>
         {hasItems && <button className="cta cta--success">Order</button>}
       </div>
-      {/* <form className="modal__cta" method="dialog">
-        <button className="cta cta__cancel" onClick={onHideCartModal}>Close</button>
-        {hasItems && <button className="cta cta--success">Order</button>}
-      </form> */}
     </Modal>
   )
 }

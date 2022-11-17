@@ -10,14 +10,13 @@ const App = () => {
   let modal = null;
 
   React.useEffect(() => {
-    modal = document.querySelector(".modal");
+    modal = document.querySelector(".modal__overlay");
       return () => {
         modal = null;
       }
   }, []);
 
   const handleShowCartModal = () => {
-    // modal.show();
     modal.showModal();
   }
 

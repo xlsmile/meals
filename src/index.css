@@ -505,21 +505,17 @@ body {
   opacity: 0.9;
 }
 
-.modal {
+.modal__overlay {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
   background-color: #ffdab3;
-  border: none;
   padding: 5.2rem;
   min-width: 40%;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
-}
-.modal::backdrop {
-  background: linear-gradient(45deg, #355ba0, #a44dab);
-  opacity: 0.5;
 }
 .modal__content {
   font-size: 3.2rem;
