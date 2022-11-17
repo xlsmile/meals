@@ -13,7 +13,6 @@
     z-index: 30;
 
   &::backdrop {
-    // background-color: rgb(0 0 0 / 0.5);
     background: linear-gradient(-45deg, $color-primary, $color-lambda);
     opacity: 0.5;
   }
@@ -61,7 +60,6 @@
 
 @keyframes slideup {
   from {
-    // transform: translateY(-10%);
     top: 0%;
   }
 }

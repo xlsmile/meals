@@ -27,12 +27,11 @@ const App = () => {
     };
   }, []);
 
-  const handleShowCartModal = (e) => {
-    // modal.show();
+  const handleShowCartModal = () => {
     modal.showModal();
   };
 
-  const handleHideCartModal = (e) => {
+  const handleHideCartModal = () => {
     modal.close();
   };
 

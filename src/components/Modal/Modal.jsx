@@ -5,7 +5,6 @@ const Modal = ({children}) => {
   const portalId = document.getElementById("modal");
   return (
     <>
-      {/* no need for an additional backdrop portal */}
       {ReactDOM.createPortal((<ModalOverlay>{children}</ModalOverlay>), portalId)};
     </>
   )
