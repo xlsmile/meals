@@ -11,10 +11,16 @@
     transform: translate(-50%, -50%);
     z-index: 30;
 
+    animation: fadein 400ms 250ms both, slideup 400ms 250ms both;
+
   &::backdrop {
+    // background-color: rgb(0 0 0 / 0.5);
     background: linear-gradient(-45deg, $color-primary, $color-lambda);
-    // background-color: $color-dark;
     opacity: 0.5;
+  }
+
+  &[open] {
+    border: 3px solid $color-gamma;
   }
 
   &__content {
@@ -44,5 +50,19 @@
   &__cta {
     @include flex(center, row, right);
     gap: 0.8em;
+  }
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes slideup {
+  from {
+    // transform: translateY(-10%);
+    top: 0%;
   }
 }

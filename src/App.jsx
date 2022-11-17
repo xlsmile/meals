@@ -15,12 +15,12 @@ const App = () => {
     };
   }, []);
 
-  const handleShowCartModal = () => {
+  const handleShowCartModal = (e) => {
     // modal.show();
     modal.showModal();
   };
 
-  const handleHideCartModal = () => {
+  const handleHideCartModal = (e) => {
     modal.close();
   };
 
