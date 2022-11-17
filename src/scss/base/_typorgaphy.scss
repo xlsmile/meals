@@ -2,7 +2,7 @@
   &__primary,
   &__secondary,
   &__tertiary {
-    background: linear-gradient(-90deg, $color-default, $color-gamma);
+    background: linear-gradient(-90deg, $color-primary, $color-lambda);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
