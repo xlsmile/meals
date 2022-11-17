@@ -38,7 +38,7 @@ body {
 }
 @media (max-width: 90em) {
   body {
-    background: #457d0c;
+    background: #58822b;
   }
 }
 @media (max-width: 48em) {
@@ -95,11 +95,11 @@ body {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
 }
 .cta--success {
-  background: #457d0c;
+  background: #58822b;
   color: #fef0ff;
 }
 .cta--success:hover {
-  background: #52940e;
+  background: #659531;
 }
 .cta--cart {
   display: flex;
@@ -122,26 +122,26 @@ body {
   background: #6e3272;
 }
 .cta--increase {
-  background: #457d0c;
+  background: #58822b;
   color: #fff;
   padding: 0.4em 0.8em;
 }
 .cta--increase:hover {
-  background: #38660a;
+  background: #4b6f25;
 }
 .cta--add {
-  background: #457d0c;
+  background: #58822b;
   color: #fef0ff;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  outline: 1px solid #457d0c;
+  outline: 1px solid #58822b;
   padding: 0.2em 1.2em;
 }
 .cta--add:hover {
-  background: #38660a;
+  background: #4b6f25;
 }
 .cta--add:focus, .cta--add:active {
-  background: #2b4e08;
+  background: #3e5c1e;
 }
 .cta__cancel {
   border-radius: 0;
@@ -153,6 +153,9 @@ body {
 }
 .cta__cancel:hover {
   background: none;
+}
+.cta__cancel:active {
+  box-shadow: none;
 }
 .cta__cancel::before {
   content: "";
@@ -266,7 +269,7 @@ body {
 }
 .counter__cart {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
-  background-color: #457d0c;
+  background-color: #58822b;
   border: 1px solid #fff;
   border-radius: 50%;
   font-size: 2rem;
@@ -311,7 +314,7 @@ body {
   border-top-right-radius: 0.4rem;
   padding: 0.4em 1.6em;
   background: #21252f;
-  outline: 1px solid #457d0c;
+  outline: 1px solid #58822b;
   font-family: inherit;
   font-size: 2rem;
   width: inherit;
@@ -499,6 +502,7 @@ body {
   background-size: contain;
   z-index: 100;
   filter: drop-shadow(0 0.4em 0.8em #21252f);
+  opacity: 0.9;
 }
 
 .modal__overlay {
@@ -528,7 +532,7 @@ body {
 }
 .modal__amount--number {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
-  background: #457d0c;
+  background: #58822b;
   color: #fff;
   padding: 0.1em 0.4em;
 }

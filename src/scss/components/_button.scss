@@ -90,6 +90,10 @@
       background: none;
     }
 
+    &:active {
+      box-shadow: none;
+    }
+
     &::before {
       content: "";
       position: absolute;
