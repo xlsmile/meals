@@ -28,7 +28,6 @@
 }
 
 .summary {
-  // background-color: rgb(0 0 0 / 0.45);
   background-color: $color-dark;
   border-top-left-radius: 2.8rem;
   border-top-right-radius: 2.8rem;
@@ -38,4 +37,18 @@
   position: relative;
   text-align: center;
   margin-bottom: 3.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: -45px;
+    width: 10rem;
+    height: 10.8rem;
+    background-image: url("../src/assets/images/mint-ba.png");
+    background-size: contain;
+    z-index: 100;
+    filter: drop-shadow(0 0.4em 0.8em $color-black);
+    opacity: 0.9;
+  }
 }

@@ -1,8 +1,8 @@
 .modal {
 
   &__backdrop {
-    background-color: rgb(0 0 0 / 0.6);
-    // background: linear-gradient(-45deg, $color-primary, $color-lambda);
+    // background-color: rgb(0 0 0 / 0.6);
+    background: linear-gradient(-45deg, $color-primary, $color-lambda);
     inset: 0;
     position: fixed;
     z-index: 10;
@@ -12,6 +12,7 @@
   &__overlay {
     @include box-shadow;
     @include border-radius;
+    animation: fadein 400ms 250ms both, slideup 400ms 250ms both;
     background-color: $color-delta;
     padding: 5.2rem;
     min-width: 40%;
@@ -49,5 +50,17 @@
   &__cta {
     @include flex(center, row, right);
     gap: 0.8em;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes slideup {
+  from {
+    top: 0%;
   }
 }

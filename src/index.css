@@ -47,8 +47,8 @@ body {
   }
 }
 
-.title__primary, .title__tertiary {
-  background: linear-gradient(-90deg, #36558f, #7f3a84);
+.title__primary, .title__secondary, .title__tertiary {
+  background: linear-gradient(-90deg, #355ba0, #a44dab);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -59,7 +59,6 @@ body {
 .title__secondary {
   font-size: calc(1rem + 2vw);
   margin-bottom: 0.4em;
-  color: #ffdab3;
 }
 .title__tertiary {
   font-size: calc(0.9rem + 0.8vw);
@@ -73,7 +72,6 @@ body {
   font-weight: 400;
   width: 70%;
   margin-inline: auto;
-  color: #ffdab3;
 }
 
 .cta {
@@ -490,9 +488,22 @@ body {
   text-align: center;
   margin-bottom: 3.2rem;
 }
+.summary::before {
+  content: "";
+  position: absolute;
+  top: -38px;
+  left: -45px;
+  width: 10rem;
+  height: 10.8rem;
+  background-image: url("../src/assets/images/mint-ba.png");
+  background-size: contain;
+  z-index: 100;
+  filter: drop-shadow(0 0.4em 0.8em #21252f);
+  opacity: 0.9;
+}
 
 .modal__backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(-45deg, #355ba0, #a44dab);
   inset: 0;
   position: fixed;
   z-index: 10;
@@ -501,6 +512,7 @@ body {
 .modal__overlay {
   box-shadow: 0 0.4rem 0.8rem rgba(33, 37, 47, 0.35);
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  animation: fadein 400ms 250ms both, slideup 400ms 250ms both;
   background-color: #ffdab3;
   padding: 5.2rem;
   min-width: 40%;
@@ -537,6 +549,16 @@ body {
   gap: 0.8em;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes slideup {
+  from {
+    top: 0%;
+  }
+}
 .nav {
   font-size: 2rem;
 }
