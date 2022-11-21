@@ -22,7 +22,7 @@ const Cart = ({onHideCartModal}) => {
 
   const cartItems = (
     <ul className="list list__modal">
-      {cartCtx.items.map(item =>(
+      {cartCtx.items.map(item => (
         <CartItem
           key={item.id}
           title={item.title}

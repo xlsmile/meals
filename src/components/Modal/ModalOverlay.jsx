@@ -1,7 +1,7 @@
-const ModalOverlay = (props) => {
+const ModalOverlay = ({children}) => {
   return (
     <div className="modal__overlay">
-      <div className="modal__content">{props.children}</div>
+      <div className="modal__content">{children}</div>
     </div>
   )
 }

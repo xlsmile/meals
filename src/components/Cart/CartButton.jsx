@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import {useContext} from "react";
 import CartContext from "../Store/CartContext";
 
 const CartButton = ({showCartModal}) => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = React.forwardRef(({ input, label }, ref) => {
+const Input = React.forwardRef(({input, label}, ref) => {
   return (
     <>
       <label htmlFor={input.id} className="form__label form__label--centered">{label}</label>
