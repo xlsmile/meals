@@ -11,7 +11,7 @@ const MealsForm = ({onAddToCart, id}) => {
     if (
       enteredAmount.trim().length === 0 ||
       enteredAmountNumber < 1 ||
-      enteredAmountNumber > 12
+      enteredAmountNumber > 10
     ) {
       setAmountIsValid(false);
       return;
@@ -33,7 +33,7 @@ const MealsForm = ({onAddToCart, id}) => {
           defaultValue: "1"
       }} />
       <button className="cta cta--add">Add to <i className="fa-solid fa-shopping-cart"></i></button>
-      {!amountIsValid && <p>Please, enter a valid amount (1-12)</p>}
+      {!amountIsValid && <p className="bodytext__error">Please, enter a valid amount (1-10)</p>}
     </form>
   )
 }

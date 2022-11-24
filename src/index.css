@@ -73,6 +73,11 @@ body {
   width: 70%;
   margin-inline: auto;
 }
+.bodytext__error {
+  font-size: 1.6rem;
+  padding-block: 0.8em;
+  line-height: 1.4;
+}
 
 .cta {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
@@ -153,6 +158,9 @@ body {
 }
 .cta__cancel:hover {
   background: none;
+}
+.cta__cancel:active {
+  box-shadow: none;
 }
 .cta__cancel::before {
   content: "";
