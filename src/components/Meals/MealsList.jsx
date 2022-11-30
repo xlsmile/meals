@@ -28,22 +28,11 @@ const meals = [
 ];
 
 const MealsList = () => {
-
   const mealslist = meals.map((meal) => (
-    <MealsItem
-        key={meal.id}
-        id={meal.id}
-        title={meal.title}
-        description={meal.description}
-        price={meal.price}
-      />
-    ));
+    <MealsItem key={meal.id} id={meal.id} title={meal.title} description={meal.description} price={meal.price} />
+  ));
 
-  return (
-    <ul className="list">
-      {mealslist}
-    </ul>
-  );
+  return <ul className="list">{mealslist}</ul>;
 };
 
 export default MealsList;

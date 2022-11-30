@@ -1,13 +1,11 @@
-import {useContext, useEffect, useState} from "react";
+import { useContext, useEffect, useState } from "react";
 import CartContext from "../Store/CartContext";
 
-
-const CartButton = ({showCartModal}) => {
-
+const CartButton = ({ showCartModal }) => {
   const [btnIsHighlighted, setbtnIsHighlighted] = useState(false);
   const cartCtx = useContext(CartContext);
 
-  const {items} = cartCtx;
+  const { items } = cartCtx;
 
   const numberOfCartItems = items.reduce((curNumber, item) => {
     return curNumber + item.amount;
@@ -28,16 +26,15 @@ const CartButton = ({showCartModal}) => {
     return () => {
       clearTimeout(timer);
     };
-
   }, [items]);
 
   return (
     <button className={btnClasses} onClick={showCartModal}>
       <i className="fa-solid fa-shopping-cart"></i>
-        Cart
+      Cart
       <span className="counter__cart">{numberOfCartItems}</span>
     </button>
-  )
-}
+  );
+};
 
 export default CartButton;

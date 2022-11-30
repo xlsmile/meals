@@ -2,7 +2,7 @@ import Image from "../../assets/images/berries-aa.jpg";
 import NavMain from "../Nav/NavMain";
 import CartButton from "../Cart/CartButton";
 
-const Header = ({onShowCartModal}) => {
+const Header = ({ onShowCartModal }) => {
   return (
     <>
       <header className="header">
@@ -10,9 +10,9 @@ const Header = ({onShowCartModal}) => {
         <NavMain />
         <CartButton showCartModal={onShowCartModal} />
       </header>
-      <img className="image__primary" src={Image} alt="collection of berries"/>
+      <img className="image__primary" src={Image} alt="collection of berries" />
     </>
-  )
-}
+  );
+};
 
 export default Header;

@@ -1,10 +1,9 @@
-import {useEffect, useContext} from "react";
+import { useEffect, useContext } from "react";
 import Modal from "../Modal/Modal";
 import CartItem from "./CartItem";
 import CartContext from "../Store/CartContext";
 
-const Cart = ({onHideCartModal}) => {
-
+const Cart = ({ onHideCartModal }) => {
   useEffect(() => {
     document.addEventListener("keyup", (e) => {
       if (e.key === "Escape") {
@@ -21,12 +20,12 @@ const Cart = ({onHideCartModal}) => {
     cartCtx.removeItem(id);
   };
   const handleAddCartItem = (item) => {
-    cartCtx.addItem({...item, amount: 1});
+    cartCtx.addItem({ ...item, amount: 1 });
   };
 
   const cartItems = (
     <ul className="list list__modal">
-      {cartCtx.items.map(item => (
+      {cartCtx.items.map((item) => (
         <CartItem
           key={item.id}
           title={item.title}
@@ -47,11 +46,13 @@ const Cart = ({onHideCartModal}) => {
         <span className="modal__amount--number">{totalAmount}</span>
       </div>
       <div className="modal__cta">
-        <button className="cta cta__cancel" onClick={onHideCartModal}>Close</button>
+        <button className="cta cta__cancel" onClick={onHideCartModal}>
+          Close
+        </button>
         {hasItems && <button className="cta cta--success">Order</button>}
       </div>
     </Modal>
-  )
-}
+  );
+};
 
 export default Cart;

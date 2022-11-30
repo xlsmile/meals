@@ -1,17 +1,17 @@
-import {useContext} from "react";
+import { useContext } from "react";
 import MealsForm from "./MealsForm";
 import CartContext from "../Store/CartContext";
 
-const MealsItem = ({id, title, price, description}) => {
+const MealsItem = ({ id, title, price, description }) => {
   const cartCtx = useContext(CartContext);
-  const handleAddToCart = amount => {
+  const handleAddToCart = (amount) => {
     cartCtx.addItem({
       id: id,
       title: title,
       amount: amount,
-      price: price
+      price: price,
     });
-  }
+  };
   return (
     <li className="list-item">
       <div className="list-item__content">
@@ -21,7 +21,7 @@ const MealsItem = ({id, title, price, description}) => {
       </div>
       <MealsForm id={id} onAddToCart={handleAddToCart} />
     </li>
-  )
-}
+  );
+};
 
 export default MealsItem;
